@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzly - Tu app de finanzas personales</title>
+    <style>
+        :root {
+            --primary: #6366F1;
+            --primary-dark: #4F46E5;
+            --secondary: #10B981;
+            --dark: #1A1F2E;
+            --light: #F8FAFC;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+        }
+        header {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--dark), #2a3249);
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 4rem 2rem;
+        }
+        .feature-card {
+            background-color: #242938;
+            padding: 2rem;
+            border-radius: 16px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        footer {
+            padding: 2rem;
+            background-color: #0F172A;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finanzly</h1>
+        <p class="subtitle">La forma más fácil y elegante de gestionar tus ingresos, controlar tus gastos diarios y organizar tu presupuesto mensual desde tu Android.</p>
+        <a href="https://github.com/mexy3j/finanzly" class="btn">Ver en GitHub</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>📊 Presupuestos Inteligentes</h3>
+            <p>Define límites mensuales para categorías como alimentación o transporte, y entérate si los excedes.</p>
+        </div>
+        <div class="feature-card">
+            <h3>💸 Control de Gastos</h3>
+            <p>Registra rápidamente tus transacciones y clasifícalas para tener un balance claro de tu dinero.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📈 Exporta a CSV</h3>
+            <p>Descarga un reporte de todas tus finanzas en formato Excel (CSV) con un solo toque.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Finanzly App. Creado para Android con Jetpack Compose.</p>
+    </footer>
+</body>
+</html>
